@@ -9,7 +9,7 @@ Además, muestre en pantalla cuantas palabras se corrigió en total. Debe utiliz
 
 // Función que corrige una palabra si es "ecuador" o alguna variación
 // Devuelve 1 si se corrigió la palabra, 0 si no
-int corregir_palabra(char *palabra) {
+int correccion (char *palabra) {
   // Si la palabra es "ecuador" o alguna variación
   if (stricmp(palabra, "ecuador") == 0) {
     // Cambiar la primera letra a mayúscula
@@ -22,6 +22,14 @@ int corregir_palabra(char *palabra) {
 }
 int main(int argc, char const *argv[])
 {
-    
+    // Abrir el archivo de entrada en modo lectura
+  FILE *entrada = fopen("tricolor.txt", "r");
+  // Abrir el archivo de salida en modo escritura
+  FILE *salida = fopen("tricolor2.txt", "w");
+  // Declarar una variable para almacenar cada palabra leída
+  char palabra[100];
+  // Declarar una variable para contar las palabras corregidas
+  int corregidas = 0;
+
     return 0;
 }
