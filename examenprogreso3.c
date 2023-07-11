@@ -59,6 +59,4 @@ int main(int argc, char const *argv[])
   printf("Se corrigieron %d palabras ecuador\n", corregidas);
   
   return 0;
-
-    return 0;
 }
